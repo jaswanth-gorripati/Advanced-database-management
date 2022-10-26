@@ -2,7 +2,7 @@ import sqlite3
 
 # DB-API spec for talking to relational databases in Python
 
-connection = sqlite3.connect("shopping_list.db")
+connection = sqlite3.connect("/home/Jaswanth434/mysite/Advanced-database-management/topic-03-datasets/shopping_list.db")
 
 cursor = connection.cursor()
 

@@ -2,7 +2,7 @@
 
 import dataset
 
-db = dataset.connect('sqlite:///shopping_list.db')
+db = dataset.connect('sqlite:////home/Jaswanth434/mysite/Advanced-database-management/topic-03-datasets/shopping_list.db')
 
 def get_items(id=None):
     table = db['list']
