@@ -1,6 +1,7 @@
 # database.py - functions for managing database
 
 import dataset
+import logging
 
 db = dataset.connect('sqlite:////home/Jaswanth434/mysite/Advanced-database-management/topic-03-datasets/shopping_list.db')
 
@@ -11,6 +12,9 @@ def get_items(id=None):
     else:
         items = table.find(id=int(id))
     items = [dict(item) for item in items]
+    logging.error("---")
+    logging.error(items)
+    logging.error("---")
     return items
 
 def add_item(description, quantity):
